@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:lipad_app/home_page/home_page.dart';
-import 'package:lipad_app/home_page/home_page_controller.dart';
-import 'package:lipad_app/settings_page/settings_page.dart';
-import 'package:lipad_app/settings_page/settings_page_controller.dart';
+import 'package:LIPAD/home_page/home_page.dart';
+import 'package:LIPAD/home_page/home_page_controller.dart';
+import 'package:LIPAD/settings_page/settings_page.dart';
+import 'package:LIPAD/settings_page/settings_page_controller.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,9 +20,10 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.landscapeRight,
     ]);
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'LIPAD',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
       ),
       initialRoute: '/settings',
       getPages: [
